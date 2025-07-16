@@ -1,0 +1,10 @@
+{
+  "name": "jp-consulting-website",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "hugo --gc --minify"
+  },
+  "dependencies": {
+    "hugo-bin": "^0.121.1"
+  }
+}

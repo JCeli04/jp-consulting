@@ -1,0 +1,89 @@
+:root {
+  --primary: #1a6ed8;
+  --secondary: #2c3e50;
+  --accent: #e67e22;
+  --light: #f8f9fa;
+  --dark: #212529;
+}
+
+.hero {
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  padding: 0 2rem;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.btn {
+  background: var(--primary);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1rem;
+}
+/* Portfolio Styles */
+.portfolio-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.portfolio-items h2 {
+  color: #1a6ed8;
+  border-bottom: 2px solid #e67e22;
+  padding-bottom: 0.5rem;
+  margin-top: 2rem;
+}
+
+.portfolio-items strong {
+  display: block;
+  margin: 1rem 0 0.5rem;
+  color: #2c3e50;
+}
+
+.portfolio-items ul {
+  padding-left: 1.5rem;
+}
+
+.portfolio-items li {
+  margin-bottom: 0.5rem;
+}
+/* Portfolio Preview */
+.portfolio-preview {
+  background: #f8f9fa;
+  padding: 4rem 0;
+}
+
+.project-highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.project-card {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.btn-outline {
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-block;
+}

@@ -1,0 +1,32 @@
+baseURL = "http://localhost:1313/""
+languageCode = "en-us"
+title = "Juan Pablo Bravo Celi | Digital Transformation Consultant"
+theme = "ananke"
+
+[params]
+  description = "Digital Transformation Strategy | Operational Excellence | Change Management | Executive Coaching"
+  featured_image = "/img/hero-bg.jpg"
+  logo = "/img/logo.svg"
+
+[menu]
+  [[menu.main]]
+    name = "Services"
+    url = "/services/"
+    weight = 1
+  [[menu.main]]
+    name = "Portfolio"
+    url = "/portfolio/"
+    weight = 2
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 3
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 4
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
