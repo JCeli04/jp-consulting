@@ -26,3 +26,37 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "body", widget: "markdown" }
+
+  - name: "about"
+    label: "About Juan"
+    file: "content/about.md"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Summary", name: "summary", widget: "markdown" }
+      - { label: "Highlights", name: "highlights", widget: "list" }
+      - { label: "Certifications", name: "certifications", widget: "list" }
+      - { label: "Languages", name: "languages", widget: "list" }
+      - { label: "LinkedIn", name: "linkedin", widget: "string" }
+
+  - name: "portfolio"
+    label: "Portfolio"
+    folder: "content/portfolio"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Client", name: "client", widget: "string" }
+      - { label: "Region", name: "region", widget: "string" }
+      - { label: "Summary", name: "summary", widget: "text" }
+      - { label: "Impact", name: "impact", widget: "markdown" }
+      - { label: "Highlights", name: "highlights", widget: "list" }
+
+  - name: "resources"
+    label: "Resources"
+    folder: "static/files"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "File", name: "file", widget: "file" }
+      - { label: "Description", name: "description", widget: "text" }
